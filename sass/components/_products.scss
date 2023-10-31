@@ -40,6 +40,14 @@
   padding: 40px 22px 22px;
   border-radius: 15px;
   background-color: $bg-color;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
+    transform: scaleY(1.01);
+  }
+  &:focus {
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  }
 }
 .item-top-container {
   display: flex;

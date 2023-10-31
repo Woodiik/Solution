@@ -430,6 +430,17 @@ img {
   padding: 40px 22px 22px;
   border-radius: 15px;
   background-color: #f5f5f7;
+  cursor: pointer;
+}
+.products-list-item:hover {
+  -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transform: scaleY(1.01);
+          transform: scaleY(1.01);
+}
+.products-list-item:focus {
+  -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
 .item-top-container {
