@@ -1,0 +1,75 @@
+.summary {
+  .summary-container {
+    max-width: 1202px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.summary-title {
+  margin-bottom: 40px;
+
+  color: $accent-text-color;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.28;
+  text-transform: uppercase;
+}
+.summary-item-title {
+  margin-bottom: 30px;
+
+  color: $black-color;
+  font-family: Verdana;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.33;
+}
+.summary-description {
+  max-width: 794px;
+  margin-bottom: 50px;
+
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+.accent-container {
+  display: flex;
+  align-items: flex-start;
+}
+.paws {
+  display: inline-block;
+  margin-top: 6px;
+  margin-right: 6px;
+
+  color: $accent-text-color;
+  font-family: Verdana;
+  font-size: 100px;
+  line-height: 0.8;
+}
+.accent-text {
+  display: inline-block;
+  max-width: 738px;
+  margin-bottom: 30px;
+
+  color: $accent-text-color;
+  font-family: "Verdana Pro Cond";
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.54;
+}
+
+.post-accent-text {
+  max-width: 738px;
+  margin-bottom: 50px;
+  margin-left: 52px;
+
+  color: $black-color;
+  font-family: "Verdana Pro Cond";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.66;
+}

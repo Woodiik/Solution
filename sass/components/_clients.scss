@@ -1,0 +1,62 @@
+.clients {
+  color: $main-text-color;
+  padding: 60px 16px;
+  @media screen and (min-width: 1280px) {
+    padding: 160px 16px 146px 16px;
+  }
+}
+.clients-title {
+  margin-bottom: 30px;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 120%;
+  text-align: center;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 60px;
+    font-size: 40px;
+  }
+}
+.our-clients {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  @media screen and (min-width: 782px) {
+    gap: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 60px;
+  }
+}
+
+.client {
+  max-width: 150px;
+
+  @media screen and (max-width: 632px) {
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 632px) {
+    &:not(:nth-last-child(-n + 4)) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .client-name {
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .client-icon {
+    transition: all 0.25s $cubic;
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+}
