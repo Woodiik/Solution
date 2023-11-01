@@ -59,7 +59,7 @@
     max-width: 1000px;
   }
   @media screen and(min-width:1500px) {
-    max-width: 1500px;
+    max-width: 1550px;
   }
 }
 
@@ -111,9 +111,6 @@
   gap: 22px;
   scroll-behavior: smooth;
   scrollbar-width: none;
-  @media screen and(max-width:1023px) {
-    //margin-left: 4px;
-  }
 }
 
 .carousel::-webkit-scrollbar {
@@ -154,6 +151,9 @@
 
   @media screen and(min-width:1024px) {
     width: 488px;
+  }
+  &:hover {
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
   }
 }
 

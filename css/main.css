@@ -733,10 +733,6 @@ img {
   -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
 }
-.products-list-item:focus {
-  -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
-}
 
 .item-top-container {
   display: -webkit-box;
@@ -974,7 +970,7 @@ img {
 }
 @media screen and (min-width: 1500px) {
   .wrapper {
-    max-width: 1500px;
+    max-width: 1550px;
   }
 }
 
@@ -1037,6 +1033,7 @@ img {
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
+
 .carousel::-webkit-scrollbar {
   display: none;
 }
@@ -1096,6 +1093,10 @@ img {
   .carousel .card {
     width: 488px;
   }
+}
+.carousel .card:hover {
+  -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
 .img-container {
