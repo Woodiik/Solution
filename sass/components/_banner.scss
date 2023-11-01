@@ -16,6 +16,9 @@
     background-position: -30% 0;
     background-size: 715px 710px;
   }
+  @media screen and(min-width:1440px) {
+    background-position: 0 0;
+  }
   @media screen and(min-width:1920px) {
     margin-top: 124px;
     margin-bottom: 120px;
