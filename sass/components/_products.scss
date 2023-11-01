@@ -1,49 +1,88 @@
 .products {
-  margin-bottom: 140px;
+  padding-bottom: 40px;
+  @media screen and(min-width:1024px) {
+    padding-bottom: 80px;
+  }
+  @media screen and(min-width:1920px) {
+    padding-bottom: 140px;
+  }
   .products-container {
-    max-width: 1202px;
     margin-right: auto;
     margin-left: auto;
-    padding: 60px;
+    max-width: 350px;
+    padding: 20px;
     border-radius: 15px;
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.08);
     background-color: $white-main-color;
+    @media screen and(min-width:1024px) {
+      padding: 60px;
+      max-width: 868px;
+    }
+    @media screen and(min-width:1920px) {
+      max-width: 1202px;
+    }
   }
 }
 
 .products-title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
   color: $accent-text-color;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 1.28;
   text-transform: uppercase;
+  @media screen and(min-width:1024px) {
+    margin-bottom: 30px;
+    font-size: 50px;
+  }
 }
 .products-text {
-  margin-bottom: 50px;
   max-width: 488px;
-
+  margin-bottom: 20px;
   color: $main-text-color;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+
+  @media screen and(min-width:1024px) {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  @media screen and(min-width:1920px) {
+    margin-bottom: 50px;
+  }
 }
 .products-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 22px;
+  gap: 20px;
+
+  @media screen and(min-width:1024px) {
+    gap: 40px;
+  }
+  @media screen and(min-width:1920px) {
+    gap: 22px;
+  }
 }
 .products-list-item {
-  width: 530px;
+  width: 100%;
   padding: 40px 22px 22px;
   border-radius: 15px;
   background-color: $bg-color;
   cursor: pointer;
+  @media screen and(min-width:1024px) {
+    width: 530px;
+  }
+  @media screen and(min-width:1024px) and (max-width: 1919px) {
+    &:nth-child(2) {
+      margin-left: 200px;
+    }
+  }
+
   &:hover {
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
-    transform: scaleY(1.01);
   }
   &:focus {
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
@@ -52,15 +91,22 @@
 .item-top-container {
   display: flex;
   align-items: center;
+
   margin-bottom: 20px;
+  @media screen and(max-width:1023px) {
+    justify-content: space-around;
+  }
 }
 .feature-name {
-  margin-left: 46px;
-
+  max-width: 150px;
   color: $accent-text-color;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.13;
+  @media screen and(min-width:1024px) {
+    font-size: 30px;
+    margin-left: 46px;
+  }
 }
 .feature-description {
   font-size: 16px;

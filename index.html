@@ -27,29 +27,34 @@
               </svg>
             </a>
           </div>
+          <button class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="burger-icon" width="40" height="40">
+              <use href="./img/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
           <ul class="social-media-list">
             <li><a href="">
-                <svg width="13" height="13">
+                <svg class="social-media-icon" width="13" height="13">
                   <use href="./img/icons.svg#icon-instagram"></use>
                 </svg>
               </a></li>
             <li><a href="">
-                <svg width="13" height="13">
+                <svg class="social-media-icon" width="13" height="13">
                   <use href="./img/icons.svg#icon-facebook"></use>
                 </svg>
               </a></li>
             <li><a href="">
-                <svg width="13" height="13">
+                <svg class="social-media-icon" width="13" height="13">
                   <use href="./img/icons.svg#icon-twitter"></use>
                 </svg>
               </a></li>
             <li><a href="">
-                <svg width="13" height="13">
+                <svg class="social-media-icon" width="13" height="13">
                   <use href="./img/icons.svg#icon-linkedin"></use>
                 </svg>
               </a></li>
             <li class="social-media-list-item"><span class="language">EN</span>
-              <svg width="7" height="7">
+              <svg class="polygon-icon" width="7" height="7">
                 <use href="./img/icons.svg#icon-Vector-7"></use>
               </svg>
             </li>
@@ -202,7 +207,8 @@
           </div>
           <div>
             <h3 class="summary-item-title">Walter Isaacson has written a riveting stor</h3>
-            <p class="summary-description">He encouraged the people he knew to speak honestly. AndJobs speaks candidly,
+            <p class="summary-description last">He encouraged the people he knew to speak honestly. AndJobs speaks
+              candidly,
               sometimes brutally so, about
               the people he
               worked with and competed against. His friends, foes, and colleagues provide an unvarnished view
@@ -446,34 +452,36 @@
                     <use href="./img/icons.svg#icon-logo"></use>
                   </svg></a>
               </div>
-              <div>
-                <h4 class="left-side-title">Follow Us</h4>
-                <ul class="social-media-list">
-                  <li class="social-media-list-item"><a href="">
-                      <svg width="19" height="19">
-                        <use href="./img/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a></li>
-                  <li class="social-media-list-item"><a href="">
-                      <svg width="19" height="19">
-                        <use href="./img/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a></li>
-                  <li class="social-media-list-item"><a href="">
-                      <svg width="19" height="19">
-                        <use href="./img/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a></li>
-                  <li class="social-media-list-item"><a href="">
-                      <svg width="19" height="19">
-                        <use href="./img/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a></li>
-                </ul>
-              </div>
-              <div>
-                <h4 class="left-side-title">CONTACT SALES</h4>
-                <p class="email">info@test.com</p>
+              <div class="social-and-contacts">
+                <div>
+                  <h4 class="left-side-title">Follow Us</h4>
+                  <ul class="social-media-list">
+                    <li><a href="">
+                        <svg class="social-media-icon" width="19" height="19">
+                          <use href="./img/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a></li>
+                    <li><a href="">
+                        <svg class="social-media-icon" width="19" height="19">
+                          <use href="./img/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a></li>
+                    <li><a href="">
+                        <svg class="social-media-icon" width="19" height="19">
+                          <use href="./img/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a></li>
+                    <li><a href="">
+                        <svg class="social-media-icon" width="19" height="19">
+                          <use href="./img/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="left-side-title">CONTACT SALES</h4>
+                  <a class="email" href="mailto:info@test.com">info@test.com</a>
+                </div>
               </div>
             </div>
             <div class="right-side">
@@ -545,37 +553,73 @@
   </main>
   </div>
 
-  <!--<div class="menu-container js-menu-container" id="mobile-menu">
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="mobile-menu-logo">
+      <a href="/index.html">
+        <svg width="112" height="40">
+          <use href="./img/icons.svg#icon-logo"></use>
+        </svg>
+      </a>
+    </div>
     <button class="menu-icon js-close-menu">
       <svg class="icon-close-40px" width="40" height="40">
         <use href="./img/icons.svg#icon-close"></use>
       </svg>
     </button>
-    <ul class="mobile-menu">
-      <li class="mobile-menu-page"><a class="menu-link" href="./index.html">Офлайн програми
-          <svg class="polygon-icon" width="10" height="10">
-            <use href="./img/icons.svg#icon-polygon"></use>
-          </svg></a></li>
-      <li class="mobile-menu-page"><a class="menu-link" href="./index.html">Онлайн програми
-          <svg class="polygon-icon" width="10" height="10">
-            <use href="./img/icons.svg#icon-polygon"></use>
-          </svg></a></li>
-      <li class="mobile-menu-page"><a class="menu-link" href="./index.html">Розклад</a></li>
-      <li class="mobile-menu-page"><a class="menu-link" href="./index.html">Тренери</a></li>
-      <li class="mobile-menu-page"><a class="menu-link" href="./index.html">Тести
-          <svg class="polygon-icon" width="10" height="10">
-            <use href="./img/icons.svg#icon-polygon"></use>
-          </svg></a></li>
-      <li class="mobile-menu-page"><a class="menu-link" href="./index.html">Блог</a></li>
-
-
+    <ul class="mobile-menu-list">
+      <li class="nav-list-item"><a href="/index.html">Solutions
+          <svg class="polygon-icon" width="7" height="7">
+            <use href="./img/icons.svg#icon-Vector-7"></use>
+          </svg>
+        </a></li>
+      <li class="nav-list-item"><a href="/index.html">PRODUCTS
+          <svg class="polygon-icon" width="7" height="7">
+            <use href="./img/icons.svg#icon-Vector-7"></use>
+          </svg>
+        </a></li>
+      <li class="nav-list-item"><a href="/index.html">PARTNERS</a></li>
+      <li class="nav-list-item"><a href="/index.html">Demo</a></li>
+      <li class="nav-list-item"><a href="/index.html">EVENTS
+          <svg class="polygon-icon" width="7" height="7">
+            <use href="./img/icons.svg#icon-Vector-7"></use>
+          </svg>
+        </a></li>
+      <li class="nav-list-item"><a href="/index.html">CAREERS</a></li>
+      <li class="nav-list-item"><a href="/index.html">blog</a></li>
+      <li class="nav-list-item"><a href="/index.html">Contact us</a></li>
     </ul>
     <div class="mobile-menu-contacts">
-      <a class="mobile-menu-tel" href="tel:+380991231212">+38 099 123 12 12</a>
-      <a class="mobile-menu-mail" href="mailto:vovikvova04@gmail.com">vovikvova04@gmail.com</a>
+      <ul class="mobile-menu-social-media-list">
+        <li><a href="">
+            <svg class="social-media-icon" width="13" height="13">
+              <use href="./img/icons.svg#icon-instagram"></use>
+            </svg>
+          </a></li>
+        <li><a href="">
+            <svg class="social-media-icon" width="13" height="13">
+              <use href="./img/icons.svg#icon-facebook"></use>
+            </svg>
+          </a></li>
+        <li><a href="">
+            <svg class="social-media-icon" width="13" height="13">
+              <use href="./img/icons.svg#icon-twitter"></use>
+            </svg>
+          </a></li>
+        <li><a href="">
+            <svg class="social-media-icon" width="13" height="13">
+              <use href="./img/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a></li>
+        <li class="social-media-list-item"><span class="language">EN</span>
+          <svg class="polygon-icon" width="7" height="7">
+            <use href="./img/icons.svg#icon-Vector-7"></use>
+          </svg>
+        </li>
+      </ul>
+      <a class="my-contact" href="https://t.me/Woodiik">Feedback here</a>
     </div>
   </div>
-  <script src="./js/mobile-menu.js"></script>-->
+  <script src="./js/mobile-menu.js"></script>
   <script src="./js/script.js"></script>
   <script src="./js/questions.js"></script>
 

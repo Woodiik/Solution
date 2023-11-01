@@ -1,77 +1,171 @@
 .footer {
   background-color: #e8e5f4;
-  padding: 62px 0 30px;
+  padding: 28px 20px 20px;
+  @media screen and(min-width:1024px) {
+    padding: 62px 0 20px;
+  }
+  @media screen and(min-width:1920px) {
+    padding: 62px 0 30px;
+  }
+  .footer-container {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and(min-width:1024px) {
+      max-width: 868px;
+    }
+    @media screen and(min-width:1920px) {
+      max-width: 1202px;
+    }
+  }
 }
-.footer-container {
-  max-width: 1202px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .top-footer {
-  display: flex;
-  margin-bottom: 60px;
+  @media screen and(min-width:1024px) {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  @media screen and(min-width:1920px) {
+    margin-bottom: 60px;
+  }
 }
 .left-side {
   .logo {
-    margin-bottom: 80px;
+    @media screen and(min-width:1024px) {
+      margin-bottom: 40px;
+    }
+    @media screen and(min-width:1920px) {
+      margin-bottom: 80px;
+    }
   }
   h4 {
     margin-bottom: 20px;
     color: $accent-text-color;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 1.33;
     text-transform: uppercase;
+    @media screen and(min-width:1024px) {
+      font-size: 18px;
+    }
   }
   .email {
     color: $accent-text-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
+    text-decoration: none;
+    transition: all 0.25s $cubic;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}
+.social-and-contacts {
+  @media screen and(max-width:1023px) {
+    padding-top: 28px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .social-media-list {
   display: flex;
-  gap: 32px;
-  margin-bottom: 50px;
+  align-items: center;
+  gap: 16px;
+  @media screen and(min-width:1024px) {
+    margin-bottom: 30px;
+    gap: 32px;
+  }
+  @media screen and(min-width:1920px) {
+    margin-bottom: 50px;
+  }
+  a {
+    transition: all 0.25s $cubic;
+
+    fill: $accent-text-color;
+    &:hover {
+      fill: $hover-color;
+    }
+    &:focus {
+      fill: $hover-color;
+    }
+  }
 }
 .right-side {
   display: flex;
+
   color: $accent-text-color;
+  @media screen and(max-width:1023px) {
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+  @media screen and(min-width:1024px) {
+    margin-top: 20px;
+  }
+  @media screen and(min-width:1920px) {
+    margin-top: 42px;
+  }
   h4 {
     margin-bottom: 30px;
 
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 1.2;
     text-transform: uppercase;
+    @media screen and(min-width:1024px) {
+      font-size: 20px;
+    }
   }
   li {
+    transition: all 0.25s $cubic;
+    &:hover {
+      color: $hover-color;
+    }
     &:not(:last-child) {
       margin-bottom: 10px;
     }
   }
   a {
+    color: inherit;
     font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
   }
 }
 .footer-nav-list {
-  margin-top: 42px;
-  &:first-child {
-    margin-left: 296px;
-    margin-right: 140px;
+  @media screen and(max-width:1023px) {
+    width: 100px;
   }
-  &:nth-child(2) {
-    margin-right: 60px;
+
+  @media screen and(min-width:1024px) {
+    &:nth-child(2) {
+      margin-right: 40px;
+    }
+  }
+
+  &:first-child {
+    @media screen and(min-width:1024px) {
+      margin-left: 140px;
+      margin-right: 100px;
+    }
+    @media screen and(min-width:1920px) {
+      margin-left: 296px;
+      margin-right: 140px;
+    }
   }
 }
 
 .partners {
   position: relative;
-  margin-bottom: 40px;
+  @media screen and(min-width:1024px) {
+    margin-bottom: 20px;
+  }
+  @media screen and(min-width:1920px) {
+    margin-bottom: 40px;
+  }
 
   &::before {
     content: "";
@@ -91,7 +185,23 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 0;
+    @media screen and(max-width:1023px) {
+      padding: 20px 0 0;
+      flex-wrap: wrap;
+    }
+    @media screen and(min-width:1920px) {
+      padding: 12px 0;
+    }
+    li {
+      @media screen and(max-width:1023px) {
+        max-width: 72px;
+      }
+      transition: all 0.25s $cubic;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
   }
 }
 .bottom-footer {
@@ -103,10 +213,19 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 2;
+  @media screen and(max-width:1023px) {
+    padding-top: 20px;
+    flex-direction: column;
+  }
   div {
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and(max-width:1023px) {
+      &:not(:first-child) {
+        margin-top: 6px;
+      }
+    }
   }
   .adult-icon {
     margin-right: 20px;
